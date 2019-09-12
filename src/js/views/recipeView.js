@@ -40,7 +40,7 @@ export const renderRecipe = (recipe, isLiked) => {
     <figure class="recipe__fig">
     <img src="${recipe.img}" alt="${recipe.title}" class="recipe__img">
     <h1 class="recipe__title">
-        <span>Pasta with tomato cream sauce</span>
+        <span>${recipe.title}</span>
     </h1>
 </figure>
 <div class="recipe__details">
@@ -48,7 +48,7 @@ export const renderRecipe = (recipe, isLiked) => {
         <svg class="recipe__info-icon">
             <use href="img/icons.svg#icon-stopwatch"></use>
         </svg>
-        <span class="recipe__info-data recipe__info-data--minutes">${recipe.time}</span>
+        <s`pa`n class="recipe__info-data recipe__info-data--minutes">${recipe.time}</span>
         <span class="recipe__info-text"> minutes</span>
     </div>
     <div class="recipe__info">
